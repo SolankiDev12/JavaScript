@@ -80,3 +80,19 @@ console.log(Object.values(instauser)); // Returns an array of values in the obje
 console.log(Object.entries(instauser)); // Returns an array of key-value pairs in the object
 
 console.log(instauser.hasOwnProperty('name')); // Checks if the property 'name' exists in the object
+
+
+
+// Destructuring of an object
+
+const destruct = {
+    key1 : 'value',
+    key2 : true,
+    key3 : 3
+}
+
+//each time you access key1 u have to do destruct.key1 instead we could do this
+
+const {key1} = destruct
+
+console.log(key1)
