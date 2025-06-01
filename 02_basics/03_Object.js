@@ -6,7 +6,7 @@ const mysymbol = Symbol("mySymbol");
 
 const obj = {
     name: "John",
-    "fullname":"Dev Solanki",
+    fullname:"Dev Solanki",
     // mysymbol : "value",  this is not valid syntax bcz it will be treated as a string key
     [mysymbol]: "symbolValue", // using symbol as a key
     age: 20,
@@ -41,3 +41,5 @@ obj.agedisplay = function() {
 }
 
 obj.agedisplay()
+
+console.log(obj); 
