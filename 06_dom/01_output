@@ -1,0 +1,64 @@
+📘 DOM Learning Cheat Sheet – "Chai aur Code Style"
+🎯 Getting Elements
+js
+// Get element by ID
+const title = document.getElementById('title');
+
+// Get the first element matching a selector
+document.querySelector('#title');       // By ID
+document.querySelector('.test');        // By class
+document.querySelector('title');        // By tag
+document.querySelector('input[type="password"]'); // By attribute
+
+// Get all matching elements (returns NodeList)
+const items = document.querySelectorAll('li');
+
+// Get elements by class (returns HTMLCollection)
+const htmlCol = document.getElementsByClassName('list-item');
+
+🔍 Accessing Attributes
+title.id;                      // 'title'
+title.className;               // 'test' (after update)
+
+title.getAttribute('id');      // 'title'
+title.getAttribute('class');   // 'test'
+
+// Set attribute
+title.setAttribute('class', 'test');
+🎨 Styling Elements
+title.style.backgroundColor = 'green';
+items[0].style.color = 'white';
+items[0].style.color = 'black';
+
+// Looping through NodeList
+items.forEach(function (item) {
+    item.style.backgroundColor = 'green';
+});
+For HTMLCollection:
+
+const htmlArr = Array.from(htmlCol);
+htmlArr.forEach((item) => {
+    item.style.backgroundColor = 'red';
+});
+
+📝 Text Content
+title.innerText;    // Only visible text → 'DOM learning on Chai aur code'
+title.textContent;  // All text, including hidden → 'DOM learning on Chai aur code test text'
+
+// Updating text
+items[0].innerText = '69';
+
+
+📌 Notes
+querySelector() selects the first match only.
+
+querySelectorAll() returns a NodeList (can use .forEach).
+
+getElementsByClassName() returns an HTMLCollection (convert to array with Array.from()).
+
+innerText ignores hidden text. textContent includes it.
+
+Use element.style.propertyName to change inline CSS styles.
+
+🧠 Memory Boost
+"Use getElement for direct IDs, querySelector for flexible matchups. innerText sees, textContent knows. Always style with .style.property!"
