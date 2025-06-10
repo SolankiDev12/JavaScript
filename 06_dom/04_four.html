@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="languages">
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+<script>
+    function language(lang)
+    {
+        const li = document.createElement('li')
+        li.innerHTML = `${lang}`
+        const ul = document.querySelector('.languages')
+        ul.appendChild(li)
+    }
+
+    language('Python')
+    language('C++')
+
+    function optimizedone(language)
+    {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(language))
+        document.querySelector('.languages').appendChild(li)
+    }
+
+    optimizedone("Go")
+    optimizedone("RUST")
+
+    //Edit
+    const second  = document.querySelector('li:nth-child(2)')
+    // second.innerHTML = 'JavaScript is the best language'
+    const li  = document.createElement('li')
+    li.textContent = 'JavaScript is the best language'
+    second.replaceWith(li)
+
+    ///Edit
+    const third = document.querySelector('li:nth-child(3)')
+    third.outerHTML = '<li>JavaScript is the best language</li>'
+
+    //Remove
+    const fourth = document.querySelector('li: last-child')
+    fourth.remove()
+
+
+</script>
+</html>
