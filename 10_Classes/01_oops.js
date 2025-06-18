@@ -40,7 +40,7 @@ function User(name , id ,age)
 const user1 = new User('dev', 1, 25);
 const user2 = new User('john', 2, 30);
 console.log(user1.constructor);
-console.log(user2 instanceof User); // is it a part of like user2 are u part od User 
+console.log(user2 instanceof User); // is it a part of like user2 are u part of User 
 
 
 
