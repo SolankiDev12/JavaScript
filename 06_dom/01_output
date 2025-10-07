@@ -1,5 +1,18 @@
 📘 DOM Learning Cheat Sheet – "Chai aur Code Style"
 🎯 Getting Elements
+
+🌳 What is the DOM (Document Object Model)?
+
+The DOM stands for Document Object Model.
+It’s a way for your browser to understand and organize an HTML page — like a family tree.
+
+👉 Think of it like this:
+
+The HTML file you write is just text.
+
+The DOM is how the browser turns that text into a structure it can work with.
+
+It represents your web page as objects (like <html>, <body>, <p>, etc.) arranged in a tree.
 js
 // Get element by ID
 const title = document.getElementById('title');
