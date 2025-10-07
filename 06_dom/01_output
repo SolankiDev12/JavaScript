@@ -13,6 +13,12 @@ The HTML file you write is just text.
 The DOM is how the browser turns that text into a structure it can work with.
 
 It represents your web page as objects (like <html>, <body>, <p>, etc.) arranged in a tree.
+Concept	Meaning
+DOM	Tree-like model of the web page
+Node	Each part of the page (like <body>, <h1>, or text)
+JavaScript + DOM	Used to change, add, or remove elements dynamically
+
+
 js
 // Get element by ID
 const title = document.getElementById('title');
