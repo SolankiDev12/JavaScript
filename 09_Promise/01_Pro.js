@@ -30,7 +30,7 @@ const promise3 = new Promise(function(resolve , reject) {
             resolve({user : 'dev' , id: 1});
     }, 1000);
 })
-
+//resolve thi data .then ma pass
 promise3.then(function(data) {
     console.log('Promise 3 is connected with resolve and is consumed');
     console.log(data);
